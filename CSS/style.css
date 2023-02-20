@@ -1,0 +1,407 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0%;
+    background-color: #f1f1f1;
+    font-family: Arial
+}
+
+.nav-bar{
+  align-items: center;
+}
+
+nav img{
+    width: 85px;
+    padding: 3px 16px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #9DD6DF;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+
+}
+
+/* Ubicar uno al lado del otro */
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 21px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ECB390;
+}
+
+h1{
+    color: #8ac5ce;
+    text-align: center;
+    font-size: 50px;
+    padding: 40px 0px 20px;
+    margin-top: 50px;
+    margin-bottom: 0;
+    /* Adapta segun tamaño de pantalla que se siga viendo el texto */
+    word-break: break-all;
+}
+
+.active{
+    padding: 0;
+}
+
+.contenedor{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(160, 132, 207, 0.148) 0%, 
+                                              rgba(157, 214, 223, 0.32) 100%), url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+  
+.head{
+    text-align: center;
+    padding: 0;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    border-radius: 8px;
+    padding: 14px 40px;
+    background-color: #f7e2d6; 
+    color: black; 
+    border: 2px solid #f7e2d6;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
+                0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button:hover {
+    background-color: #ecb390;
+    color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 
+                0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+main {
+  width: 100%;
+  padding: 0px 50px;
+}
+
+h2{
+  font-family: 'DM Serif Display', serif;
+}
+
+h3{
+  font-family: 'Merriweather', serif;
+  font-style: italic;
+  font-size: 14px;
+  text-align: center;
+}
+
+h4{
+  font-family: 'Noto Serif Khojki', serif;
+  text-align: 13px;
+}
+
+p, .details-cv li{
+  font-family: 'Merriweather', serif;
+  font-size: 12px;
+}
+
+.name{
+  text-align: center;
+}
+
+.cv h2,
+h3,
+h4{
+  margin: 5px 0px;
+}
+
+.row {
+  margin: 8px -16px;
+}
+  
+  /*Agregar padding entre las columnas*/
+.row,
+.row > .column {
+  padding: 8px;
+}
+  
+.column {
+  float: left;
+  width: 33%;
+}
+  
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+  
+.content {
+  background-color: white;
+  padding: 15px;
+  overflow-y: scroll;
+  height: 500px;
+}
+
+.details-cv {
+  overflow: hidden;
+  background-color: white;
+}
+
+.button-adoption, #button-adoption{
+  text-align: center;
+  padding: 10px;
+}
+
+/* Nosotros */
+
+.section-grey{
+  padding: 0;
+  width: 100%;
+  /* background-color: rgb(231, 231, 231); */
+  padding-bottom: 20px;
+}
+
+.flex-align{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 90px;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.about-us .img-right img{
+  width: 400px;
+  padding-left: 20px;
+}
+
+.text-left{
+  justify-content: center;
+}
+
+.text-left p {
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.about-us .img-left img{
+  width: 400px;
+  padding-right: 20px;
+}
+
+.text-right{
+  justify-content: center;
+}
+
+.text-right p {
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.about-us .normal{
+  /* margin: 0; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Form */
+.checklist-condiciones{
+  display: flex;
+}
+
+.terminos{
+  height: 100vh;
+  /* display: flex; */
+}
+
+  .condiciones{
+    margin-bottom: 20px;
+  }
+
+  .h3 .n-condiciones{
+    display: flex;
+  }
+
+  .n-condiciones{
+    margin-bottom: 7px;
+    color: #8ac5ce;
+  }
+
+  .number{
+    display: inline-block;
+    background-image: linear-gradient(to top, #ace1ea 0%, #4eb5c5 100%);
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-weight: 700;
+    line-height: 30px;
+    margin-right: 5px;
+  }
+
+.terminos, .form-dato{
+  padding: 5px 75px 5px;
+}
+
+.form-dato{
+  background-color: white;
+}
+
+form .terminos p{
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+  padding-left: 10px;
+}
+
+.condiciones{
+  padding: 18px;
+  text-align: center;
+}
+
+h3 .n-condiciones{
+  font-weight: 1000;
+}
+
+input{
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#address{
+  width: 350px;
+}
+
+form .form-dato p{
+  font-family: 'Merriweather', serif;
+  font-size: 14px;
+}
+
+
+/* Footer */
+footer{
+  background-color: #9DD6DF;
+}
+
+.footer{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-top: 20px;
+  flex: 33%;
+}
+  
+  .we-user{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .we-user img{
+    height: 55px;
+    padding-left: 50px;
+    padding-right: 10px;
+  }
+
+  footer #name-footer{
+    display: inline;
+    font-weight: 1000;
+    color: #8ac5ce;
+    font-size: 25px;
+      /* Adapta segun tamaño de pantalla que se siga viendo el texto */
+    word-break: break-all;
+    width: 100%;
+  }
+
+  .social-media{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; /* Los ubica al final del contenedor */
+    padding-right: 50px;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #8ac5ce;
+    border-radius: 50%; /* Para que lo redondee */
+    text-align: center;
+    color: #8ac5ce;
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px; 
+}
+
+  .contact-us{
+    width: 100%;
+  }
+
+  .contact-us ul{
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    overflow: hidden;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .contact-us ul li{
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    font-weight: 1000;
+    color: #8ac5ce;
+  }
+  
+  #autor{
+    text-align: right;
+    color: rgba(0, 0, 0, 0.24);
+    padding-bottom: 15px;
+  }
+
+/* Responsive */
+  /* Hace dos columnas */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}

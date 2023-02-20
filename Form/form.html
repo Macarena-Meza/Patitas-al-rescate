@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Adopción</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Khojki:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <!-- Relacion con BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/1.svg">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                    <a class="active" href="../index.html"><img class="logo_repres" src="../img/Logo SF.png" alt="Logo reconocimiento de Patitas al Rescate"></a>
+                </li>
+                <li>
+                    <a href="../Candidatos/Candidatos.html">Candidatos</a>
+                </li>
+                <li>
+                    <a href="#terminos-y-condiciones">Condiciones de adopción</a>
+                </li>
+                <li>
+                    <a href="#Formulario-de-adopcion">Formulario de adopción</a>
+                </li>
+                <li>
+                    <a href="../nosotros/nosotros.html">Sobre Nosotros</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="form-adoption" action="#" method="get" enctype="application/x-www-form-urlencoded">
+            <div class="terminos" id="terminos-y-condiciones">
+                <!-- <h1></h1> -->
+                <h1>TERMINOS Y CONDICIONES</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum earum saepe ratione deserunt. Ex, obcaecati corrupti. Minima molestiae adipisci unde cupiditate numquam error accusamus expedita aperiam, debitis velit minus ullam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis rem suscipit delectus, dicta explicabo asperiores necessitatibus voluptas? Nostrum esse, placeat porro autem, quis atque temporibus accusamus maxime quisquam ipsa quam.</p>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae similique ipsum modi doloremque, voluptas aperiam labore commodi nostrum voluptatum aut atque omnis totam assumenda voluptate eveniet tempora sint! Beatae, illo.</p> -->
+                
+                    <div class="checklist-condiciones">
+                        <div class="condiciones">
+                            <h3 class="n-condiciones"><span class="number">1</span>Lorem ipsum dolor, sit amet </h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dignissimos rem dolorem nam quia aliquid ullam officiis illum itaque suscipit magni libero minus quaerat praesentium ab iste, rerum cumque laboriosam.</p>
+                        </div>
+                        <div class="condiciones">
+                            <h3 class="n-condiciones"><span class="number">2</span>Lorem ipsum dolor, sit amet</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam nostrum explicabo consequatur facere at illum quidem iusto ea dolorum sit. Ratione ducimus facere error aperiam a deserunt rerum, dolorem sequi!</p>
+                        </div>
+                        <div class="condiciones">
+                            <h3 class="n-condiciones"><span class="number">3</span>Lorem ipsum dolor, sit amet</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptates consequatur explicabo optio? Quam odit, aperiam nemo illo quia voluptatibus repellat in quae maiores blanditiis necessitatibus consectetur quibusdam tempore enim!</p>
+                        </div>
+                    </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est optio eum nihil molestias beatae quos quae, quisquam voluptates ex inventore quo autem et excepturi perspiciatis iusto facilis maiores. In, quasi!.</p>
+
+                <!-- <p>¿Esta de acuerdo con los terminos y condiciones?</p>
+                <label for="term-si">Si</label>
+                <input type="radio" name="term-cond" value="Si">
+                <label for="term-no">No</label>
+                <input type="radio" name="term-cond" value="No"> -->
+            </div>
+            <hr id="Formulario-de-adopcion">
+            <h1 class="normal">Solicitd de adopción</h1>
+            <div class="form-dato">
+                <h2>Datos de la mascota</h2>
+                <p>Seleccionar la mascota a adoptar</p>
+                <select class="mascota" name="option">
+                    <option value="" disabled selected> Selecciona una opción</option>
+                    <option value="1">Perro</option>
+                    <option value="2">Gato</option>
+                    <option value="3">Otro</option>	
+                </select>
+            </div>
+            <div class="form-dato">
+                <h2>Queremos conocerte</h2>
+                <label for="name-responsability">Nombre del responsable de la adopción</label>
+                <input for="text" name="name-responsability"><br>
+                <label for="Address">Dirección</label>
+                <!-- Insertar con fomrato donde dentro del input se vea el formato en la que se debe ingresar la direccion - Nombre N°, Barrio, Provincia -->
+                <input type="text" id="address" name="Address"><br>
+                <label for="phone">Numero de Telefono:</label>
+                <input type="tel" name="phone">
+                <label for="email">Email</label>
+                <input type="email" name="email">
+                <label for="date-birt">Fecha de nacimiento</label>
+                <input type="date" name="date-birt">
+            </div>
+            <div class="form-dato">
+                <h2>Sobre tu familia</h2>
+                <label for="quantity">Número de miembros en la familia</label>
+                <input type="number" name="quantity" min="0" max="20">
+                <!-- Segun la cantidad que puso arriba que se pueda elegir la cantidad de campos que le deberian aparecer para completar la edad de ellos -->
+                <p class="form-p">¿Estan todos los miembros enterados de la intencion de adoptar un animal de compañia?</p>
+                <label for="inf-si">Si</label>
+                <input type="radio" name="inf-flia" value="Si">
+                <label for="inf-no">No</label>
+                <input type="radio" name="inf-flia" value="No">
+                <p>¿Están de acuerdo?</p>
+                <label for="si-flia">Si</label>
+                <input type="radio" name="desicion-flia" value="Si">
+                <label for="no-flia">No</label>
+                <input type="radio" name="desicion-flia" value="No">
+                <label for="motivo-des-flia">¿Porqué?</label>
+                <input type="text" name="motivo-des-flia">
+
+                <p>¿Hay alguien en tu familia con problemas de alergias?</p>
+                <label for="alrgias-si">Si</label>
+                <input type="radio" name="alergias">
+                <label for="alrgias-no">No</label>
+                <input type="radio" name="alergias"><br>
+                
+                <label for="es-alergico">¿Qué sucederia si alguien resulta alérgico al animal?</label>
+                <input type="text" name="es-alergico"><br>
+                
+                <label for="animales">¿Qué animales has tenido?</label>
+                <input type="text" name="animales"><br>
+                
+                <label for="donde-estan">Lo que ya no están contigo, ¿dónde están?</label>
+                <input type="text" name="animales">
+                
+                <label for="porque">¿Porqué?</label>
+                <input class="w3-input w3-animate-input" type="text" style="width:135px"><br>
+                    
+                <label for="mas-animales">Actualmente, ¿Tienes otros animales?</label><br>
+                <label for="porque-si">Si</label>
+                <input type="radio" name="porque">
+                <label for="porque-no">No</label>
+                <input type="radio" name="porque">
+            </div>
+            <div class="form-dato" id="button-adoption">
+                <input type="submit" value="Enviar" class="button">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="we-user">
+                <img src="../img/Logo SF.png" alt="Logo">
+                <p id="name-footer">Patitas al rescate</p>
+            </div> 
+            <div class="contact-us">
+                <ul>
+                    <li>macarenameza25@gmail.com</li>
+                    <li>Direccion 1100, Buenos Aires, Argentina</li>
+                    <li>+54 11 2345 6789</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Coderhouse/?locale=es_LA" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="https://twitter.com/coderhouse?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" class="social-media-icon">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="https://www.instagram.com/coderhouse/?hl=es-la" class="social-media-icon">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+            </div>
+        </div>
+        <hr>
+        <p id="autor">@2023 Macarena Meza's designer</p> 
+    </footer>
+</body>
+</html>
