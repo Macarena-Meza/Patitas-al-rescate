@@ -227,18 +227,10 @@ h4{
 }
 
 /* Form */
-.terminos-y-condiciones{
-  /* height: 100vh; */
-}
-
 .terminos-y-condiciones p, form label, form p{
   font-family: 'Merriweather', serif;
   font-size: 14px;
   padding-left: 10px;
-}
-
-.terminos-y-condiciones, .form-dato{
-  /* padding: 5px 75px 5px; */
 }
 
   #checklist-condiciones{
